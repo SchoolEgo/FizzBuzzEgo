@@ -1,36 +1,34 @@
 package lab1;
 
 /**
- * Solve the lab1.FizzBuzz challenge.
+ * 09/08/25
+ * Lab 1 FizzBuzz
  */
-class FizzBuzz {
+public class FizzBuzz {
+    public static void main(String[] args){
+        int i = 1;
 
-    public static void main(String[] args) {
+        while (i < 100){
+            // FInd out which numbers are divisible by 3 and 5
+            boolean fizz = i % 3 == 0;
+            boolean buzz = i % 5 == 0;
 
-        for (int i = 1; i < 100; i++) {
+            // Print the result
+            FizzOrBuzz(fizz, buzz, i);
 
-            // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+            i++;
+        }
+    }
 
-            // Print our appropriate result.
-            if (divisibleBy3 && divisibleBy5) {
-
-                System.out.println("Fizz Buzz");
-
-            } else if (divisibleBy3) {
-
-                System.out.println("Fizz");
-
-            } else if (divisibleBy5) {
-
-                System.out.println("Buzz");
-
-            } else {
-
-                System.out.println(i);
-
-            }
+    private static void FizzOrBuzz(boolean fizz, boolean buzz, int i) {
+        if (fizz && buzz){
+            System.out.println("FizzBuzz!");
+        } else if (fizz) {
+            System.out.println("Fizz");
+        } else if (buzz) {
+            System.out.println("Buzz");
+        } else {
+            System.out.println(i);
         }
     }
 }
