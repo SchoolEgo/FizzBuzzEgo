@@ -380,14 +380,14 @@ System.out.println(count);
 
 > Something to think about: is code _more_ or _less_ readable when we inline variables in this way?
 
-- [ ] Modify the `multiples` method so that it takes **three** parameters:
+- [X] Modify the `multiples` method so that it takes **three** parameters:
     - an integer `n`,
     - an integer `a`,
     - an integer `b`.
 
 These will all be positive integers.
 
-- [ ] Generalize the code so that it uses:
+- [X] Generalize the code so that it uses:
     - `n` in place of where 1000 was previously used
     - `a` where 3 was used
     - `b` where 5 was used.
