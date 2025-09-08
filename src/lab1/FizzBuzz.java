@@ -9,18 +9,17 @@ public class FizzBuzz {
         int i = 1;
 
         while (i < 100){
-            // FInd out which numbers are divisible by 3 and 5
-            boolean fizz = i % 3 == 0;
-            boolean buzz = i % 5 == 0;
-
-            // Print the result
-            FizzOrBuzz(fizz, buzz, i);
-
+            FizzOrBuzz(i);
             i++;
         }
     }
 
-    private static void FizzOrBuzz(boolean fizz, boolean buzz, int i) {
+    public static void FizzOrBuzz(int i) {
+        // FInd out which numbers are divisible by 3 and 5
+        boolean fizz = i % 3 == 0;
+        boolean buzz = i % 5 == 0;
+
+        // Print the result
         if (fizz && buzz){
             System.out.println("FizzBuzz!");
         } else if (fizz) {
